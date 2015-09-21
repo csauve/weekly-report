@@ -1,0 +1,149 @@
+$text-color-faint: silver;
+$bg-color: white;
+$fg-color: #333;
+$box-color: darken($bg-color, 4%);
+$code-font: "Menlo", monospace;
+// $main-font: 'SF UI Text', 'Lucida Grande', 'Segoe UI', Ubuntu, Cantarell, sans-serif;
+$main-font: "Menlo", monospace;
+$box-radius: 6px;
+$content-width: 800px;
+
+body {
+  background: $bg-color;
+  color: $fg-color;
+}
+
+* {
+  font-family: $main-font;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  position: fixed;
+  height: 100%;
+  width: 150px;
+  padding: 10px;
+  border-right: 1px solid $text-color-faint;
+}
+
+nav > a {
+  display: block;
+  width: 100%;
+  height: 2.0em;
+  line-height: 2.0em;
+  text-align: center;
+}
+
+main {
+  margin-left: 200px;
+  width: $content-width;
+  padding: 20px;
+}
+
+h1, h2, h3 {
+  font-weight: 100;
+}
+
+h2, h3 {
+  margin-top: 2em;
+  margin-bottom: 0.5em;
+  border-bottom: 1px solid;
+  padding-bottom: 10px;
+}
+
+h2 {
+  font-size: 140%;
+}
+
+h3 {
+  border-bottom: 1px solid $text-color-faint;
+}
+
+h4, h5, h6 {
+  margin-top: 2em;
+  margin-bottom: 0.5em;
+  text-decoration: underline;
+}
+
+p, ul, ol, blockquote, pre {
+  margin-bottom: 0.8em;
+  margin-top: 0.8em;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+img {
+  max-width: 100%;
+  margin: 1em;
+}
+
+ul, ol {
+  padding-left: 2.0em;
+}
+
+blockquote {
+  margin: 0;
+  padding: 0.5em;
+  font-style: italic;
+
+  p {
+    margin: 0;
+    padding-left: 1em;
+  }
+
+  &:before {
+    font-size: 600%;
+    content: "\201C";
+    float: left;
+    line-height: 0;
+    position: relative;
+    left: -0.35em;
+    top: 0.35em;
+  }
+}
+
+code {
+  background-color: $box-color;
+  border-radius: $box-radius;
+  border: 1px solid darken($box-color, 10%);
+  background: $box-color;
+  font-family: $code-font !important;
+  padding: 0.1em 0.25em;
+  margin: 0em 0.1em;
+}
+
+pre code {
+  display: block;
+  overflow: auto;
+  padding: 0.5em;
+  margin: 0;
+  font-size: 75%;
+  line-height: 1.3;
+}
+
+pre code span {
+  font-family: $code-font !important;
+}
+
+table {
+  border-spacing: 0px;
+  border-top: 1px solid $text-color-faint;
+  border-left: 1px solid $text-color-faint;
+  td, th {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    text-align: left;
+    border-bottom: 1px solid $text-color-faint;
+    border-right: 1px solid $text-color-faint;
+  }
+  th {
+    background: darken($bg-color, 10%);
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "weekly-update",
+  "version": "1.0.0",
+  "description": "Weekly updates of Connor Sauve",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "csauve",
+  "license": "MIT",
+  "dependencies": {
+    "event-stream": "^3.3.1",
+    "gulp": "^3.9.0",
+    "gulp-jade": "^1.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-serve": "^1.2.0",
+    "highlight.js": "^8.8.0",
+    "jstransformer-scss": "^0.1.2",
+    "remarkable": "^1.6.0"
+  }
+}

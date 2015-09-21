@@ -1,0 +1,14 @@
+doctype html
+html
+  head
+    title= title
+    style
+      include ./node_modules/highlight.js/styles/github-gist.css
+    style
+      include:scss ./style.scss
+  body
+    nav
+      each report in reports
+        a(href="/#{report}")= report
+    if htmlContent
+      main !{htmlContent}
