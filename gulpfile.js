@@ -1,5 +1,4 @@
 var gulp = require("gulp");
-var sass = require("gulp-sass");
 var serve = require("gulp-serve");
 var jade = require("gulp-jade");
 var rename = require("gulp-rename");
