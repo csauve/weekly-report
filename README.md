@@ -4,7 +4,7 @@ This project serves as a template for weekly report generation. Fork it and cust
 ## Usage
 You'll need [Node.js](https://nodejs.org/en/) and [gulp](http://gulpjs.com/) installed to run this.
 ```sh
-$ git clone git@github.com:csauve/weekly-report.git
+$ git clone https://github.com/csauve/weekly-report.git
 $ cd weekly-report
 $ npm install
 $ gulp
