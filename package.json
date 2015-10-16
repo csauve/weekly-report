@@ -11,11 +11,11 @@
   "dependencies": {
     "event-stream": "^3.3.1",
     "gulp": "^3.9.0",
-    "gulp-jade": "^1.1.0",
+    "gulp-jade": "1.1.0",
     "gulp-rename": "^1.2.2",
     "gulp-serve": "^1.2.0",
     "highlight.js": "^8.8.0",
-    "jstransformer-scss": "^0.1.2",
+    "jstransformer-scss": "0.1.2",
     "remarkable": "^1.6.0"
   }
 }
